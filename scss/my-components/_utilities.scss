@@ -2,10 +2,13 @@
     font-size: 62.5%;
 }
 
-.sticky-bottom {
-    @supports (position: sticky) {
-        position: sticky;
-        bottom: 0;
-        z-index: $zindex-sticky;
+@media (min-width: 768px) {
+
+    .sticky-bottom {
+        @supports (position: sticky) {
+            position: sticky !important;
+            bottom: 0;
+            z-index: $zindex-sticky;
+        }
     }
 }
