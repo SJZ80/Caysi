@@ -1,0 +1,14 @@
+{
+  "name": "caysi-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm i -g node-sass && npm i -g live-server",
+    "scss": "node-sass -w scss -o css",
+    "server": "live-server --host=localhost --port=3000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

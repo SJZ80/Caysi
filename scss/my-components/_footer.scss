@@ -1,0 +1,18 @@
+.footer {
+
+    background: radial-gradient(#7eb0cf, #f1f3f8);
+
+}
+
+.contact-data {
+
+    &__email::before {
+        content: "📧 ";
+    }
+
+
+
+    &__telephone::before {
+        content: "📞 ";
+    }
+}

@@ -1,0 +1,11 @@
+.html {
+    font-size: 62.5%;
+}
+
+.sticky-bottom {
+    @supports (position: sticky) {
+        position: sticky;
+        bottom: 0;
+        z-index: $zindex-sticky;
+    }
+}
