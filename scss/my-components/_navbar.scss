@@ -1,0 +1,25 @@
+.menu {
+    font-size: 1.5rem;
+
+    &__link {
+        color: $color-item-menu;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+
+    &__link:hover {
+        color: $color-item-menu !important;
+    }
+
+    &__item {
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    &__item:hover::before {
+        content: "";
+        display: block;
+        height: 3px;
+        background: radial-gradient(blue, lightblue)
+    }
+}

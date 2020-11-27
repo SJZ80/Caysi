@@ -4,3 +4,24 @@
         object-fit: cover;
     }
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+
+    &__title {
+        font-size: 2rem;
+        font-weight: 900;
+        transform: scale(1, 1.5);
+    }
+
+    &__description {
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+}

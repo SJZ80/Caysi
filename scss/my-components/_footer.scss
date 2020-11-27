@@ -1,6 +1,8 @@
 .footer {
 
-    background: radial-gradient(#7eb0cf, #f1f3f8);
+    background: radial-gradient($footer-background-begin, $footer-background-end);
+    font-size: 1.5rem;
+    color: rgb(7, 0, 0);
 
 }
 
