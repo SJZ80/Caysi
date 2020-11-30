@@ -7483,6 +7483,9 @@ a.text-body:hover, a.text-body:focus {
   font-size: 1.5em;
   font-weight: 400; }
 
+.list-customer__back:hover, .list-customer__back:active {
+  transform: rotateY(180deg); }
+
 .banner {
   background: radial-gradient(#7eb0cf, #f1f3f8);
   padding: 3rem 2rem; }
