@@ -7464,7 +7464,7 @@ a.text-body:hover, a.text-body:focus {
   perspective: 500px;
   transform-style: preserve-3d; }
 
-.list-customer__item:hover, .list-customer__item:active {
+.list-customer__item:hover {
   transform: rotateY(180deg); }
 
 .list-customer__front {
@@ -7482,9 +7482,6 @@ a.text-body:hover, a.text-body:focus {
   backface-visibility: hidden;
   font-size: 1.5em;
   font-weight: 400; }
-
-.list-customer__back:hover, .list-customer__back:active {
-  transform: rotateY(180deg); }
 
 .banner {
   background: radial-gradient(#7eb0cf, #f1f3f8);
