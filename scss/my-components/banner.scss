@@ -1,0 +1,16 @@
+.banner {
+    background: radial-gradient($footer-background-begin, $footer-background-end);
+    padding: 3rem 2rem;
+
+    &__title {
+        font-weight: 900;
+        transform: scale(1, 1.5);
+    }
+
+    &__description {
+        font-size: 1.5em;
+        font-weight: 400;
+        color: $color-item-menu;
+
+    }
+}
