@@ -8,7 +8,8 @@
         transform-style: preserve-3d;
     }
 
-    &__item:hover {
+    &__item:hover,
+    &__item:active {
         transform: rotateY(180deg);
     }
 

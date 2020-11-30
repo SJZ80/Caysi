@@ -7464,7 +7464,7 @@ a.text-body:hover, a.text-body:focus {
   perspective: 500px;
   transform-style: preserve-3d; }
 
-.list-customer__item:hover {
+.list-customer__item:hover, .list-customer__item:active {
   transform: rotateY(180deg); }
 
 .list-customer__front {
