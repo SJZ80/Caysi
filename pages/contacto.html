@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"
+      class="html">
 
   <head>
     <meta charset="UTF-8">
@@ -9,31 +10,24 @@
             async
             defer></script>
     <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-          crossorigin="anonymous">
-
-    <link rel="stylesheet"
-          href="css/styles.css">
+          href="../css/main.css">
     <title>Contacto</title>
   </head>
 
   <body>
 
-    <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content">
+    <!-- Header -->
+    <header class="sticky-top">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-navbar justify-content">
         <a class="navbar-brand"
            href="#">
-          <img src="img/CAYSIPNG.png"
+          <img src="../assets/CAYSIPNG.png"
                width="200"
                height="88"
                alt=""
                loading="lazy">
         </a>
-
-        <!-- <div class="marca">
-          <h2 class="headingColor"><a href="index.html">Montajes Industriales</a></h2>
-        </div> -->
 
         <button class="navbar-toggler"
                 type="button"
@@ -45,182 +39,113 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse flex-end"
+        <div class="collapse navbar-collapse"
              id="navbarSupportedContent">
-          <!-- mr-auto  -->
-          <ul class="navbar-nav ml-auto ">
-            <li class="nav-item active">
-              <a class="nav-link"
-                 href="index.html">Inicio <span class="sr-only">(current)</span></a>
+
+          <ul class="navbar-nav text-uppercase menu py-4 ml-auto">
+            <li class="menu__item active">
+              <a class="menu__link font-weight-bold text-decoration-none"
+                 href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+
             </li>
-            <li class="nav-item">
-              <a class="nav-link active"
-                 href="presentacion.html">Somos</a>
+            <li class="menu__item">
+              <a class="menu__link font-weight-bold text-decoration-none active"
+                 href="./presentacion.html">Somos</a>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link active"
-                 href="servicios.html">Hacemos</a>
+            <li class="menu__item ">
+              <a class="menu__link font-weight-bold text-decoration-none active"
+                 href="./servicios.html">Hacemos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active"
-                 href="clientes.html">Clientes</a>
+            <li class="menu__item">
+              <a class="menu__link font-weight-bold text-decoration-none active"
+                 href="./clientes.html">Clientes</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active"
-                 href="contacto.html">Contacto</a>
+            <li class="menu__item">
+              <a class="menu__link font-weight-bold text-decoration-none active"
+                 href="./contacto.html">Contacto</a>
             </li>
           </ul>
-
         </div>
       </nav>
     </header>
-
-    <main class="main container-fluid">
+    <main class="main container-fluid bg-body min-vh-100">
       <section>
-        <article class="contacto row">
-          <h1 class="headingColor">Contactenos</h1>
-          <div class="image col-lg-6">
+        <article class="row">
+          <div class="map col-12 col-md-5 order-1 mt-4">
 
+            <iframe class="map__iframe"
+                    height="450"
+                    src="https://maps.google.com/maps?q=%22Virgen%20del%20Valle%22%2C%20G%C3%BCemes%2C%20Alderetes%2C%20Provincia%20de%20Tucum%C3%A1n&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
           </div>
-          <div class="form col-lg-6">
-            <form action="#"
-                  method="get">
 
-              <fieldset>
-                <legend>Datos</legend>
-                <div class="row">
-                  <label>
-                    Nombre y Apellido
-                    <input type="text"
-                           placeholder="Ingrese su nombre y Apellido"
-                           required>
-                  </label>
-                  <div class="row">
-                    <label>
-                      Empresa
-                      <input type="text"
-                             placeholder="Ingrese su Empresa">
-                    </label>
-                    <div class="row">
-                      <label>
-                        Cargo
-                        <input type="text"
-                               placeholder="Ingrese su Cargo">
-                      </label>
-                      <div class="row">
-                        <label>
-                          E-mail
-                          <input type="email"
-                                 placeholder="Ingrese su e-mail"
-                                 required>
-                        </label>
-                        <div class="row">
-                          <label>
-                            Teléfono
-                            <input type="tel"
-                                   placeholder="Ingrese su nro de Tel/Cel">
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </fieldset>
 
-              <fieldset>
-                <legend>Producto/Servicio de interés</legend>
-                <div class="producto">
-                  <div class="row">
-                    <label>
-                      Sinfines
-                      <input type="checkbox"
-                             name="sinfin">
-                    </label>
-                  </div>
+          <form class="form-contact col-12 col-md-7 order-0 mt-4 ">
+            <div class="form-group">
+              <label for="formGroupExampleInput">Nombre y Apellido</label>
+              <input type="text"
+                     class="form-control form-contact__input text-monospace"
+                     id="formGroupExampleInput"
+                     placeholder="Nombre y Apellido"
+                     required>
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Empresa</label>
+              <input type="text"
+                     class="form-control form-contact__input text-monospace"
+                     id="formGroupExampleInput2"
+                     placeholder="Empresa"
+                     required>
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput3">Cargo</label>
+              <input type="text"
+                     class="form-control form-contact__input text-monospace"
+                     id="formGroupExampleInput3"
+                     placeholder="Cargo">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email</label>
+              <input type="email"
+                     class="form-control form-contact__input text-monospace"
+                     id="exampleInputEmail1"
+                     aria-describedby="emailHelp"
+                     placeholder="example@correo.com"
+                     required>
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput4">Teléfono/Movil</label>
+              <input type="tel"
+                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                     class="form-control form-contact__input text-monospace"
+                     id="formGroupExampleInput4"
+                     placeholder="123-456-7890"
+                     required>
+            </div>
 
-                  <div class="row">
-                    <label>
-                      Silos
-                      <input type="checkbox"
-                             name="silo">
-                    </label>
-                  </div>
-
-                  <div class="row">
-                    <label>
-                      Redler
-                      <input type="checkbox"
-                             name="redler">
-                    </label>
-                  </div>
-
-                </div>
-              </fieldset>
-
-              <fieldset>
-                <legend>Como nos conoció?</legend>
-                <div class="row">
-                  <label>
-                    Seleccione como nos conocio
-                    <select name="conocio">
-                      <optgroup label="Redes Sociales">
-                        <option value="face"> Facebook</option>
-                        <option value="twi"> Twitter</option>
-                        <option value="inst"> Instagram</option>
-                      </optgroup>
-
-                      <optgroup label="Referecias de Clientes">
-                        <option value="si"> Si</option>
-                        <option value="no"> No</option>
-                      </optgroup>
-
-                      <optgroup label="Publicidad">
-                        <option value="radio">Radio</option>
-                        <option value="tele">Televisión</option>
-                        <option value="diario">Diario</option>
-                      </optgroup>
-                    </select>
-                  </label>
-                </div>
-
-              </fieldset>
-              <fieldset>
-                <div class="row">
-                  <legend>Escriba su consulta</legend>
-                  <textarea name="consulta"
-                            cols="30"
-                            rows="10"
-                            placeholder="Escriba aquí su consulta">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Escriba su consulta</label>
+              <textarea class="form-control form-contact__input text-monospace"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                        placeholder="Ingrese su consulta!!!">
                 </textarea>
-                </div>
-                <div class="row">
-                  <label>
-                    Desea recibir información???
-                    <label>
-                      <input type="checkbox"
-                             name="informacion"
-                             value="1"> Si
-                    </label>
-                    <label>
-                      <input type="checkbox"
-                             name="informacion"
-                             value="0">No
-                    </label>
-                  </label>
-                </div>
+            </div>
 
+            <div class="g-recaptcha"
+                 data-sitekey="6LeofM4ZAAAAAI_45NybLz-qIbWag_YeLILHUV6O">
+            </div>
+            <div class="form-contact__button d-flex justify-content-end mt-4">
 
-              </fieldset>
-
-              <div class="g-recaptcha"
-                   data-sitekey="6LeofM4ZAAAAAI_45NybLz-qIbWag_YeLILHUV6O"></div>
               <input type="submit"
+                     class="btn btn-primary form-contact__input "
                      value="Enviar Datos">
               <input type="reset"
+                     class="btn btn-danger form-contact__input ml-4"
                      value="Limpiar Datos">
-            </form>
-          </div>
+            </div>
+
+          </form>
         </article>
         <article class="datosContacto">
 
@@ -229,51 +154,68 @@
 
     </main>
 
-    <footer class="footer">
+    <!-- Footer -->
+    <footer class=" footer position-static sticky-bottom d-flex flex-column align-items-center flex-md-row justify-content-md-between p-4">
 
-      <div class="redesSociales">
-        <ul>
-          <li> <a href="#"
-               target="_blank"
-               rel="noopener noreferrer"><img src="img/simboloFace.png"
-                   height="30"
-                   width="30"
-                   alt=""
-                   srcset=""></a> </li>
-          <li> <a href="#"
-               target="_blank"
-               rel="noopener noreferrer"><img src="img/instagram.png"
-                   height="30"
-                   width="30"
-                   alt=""
-                   srcset=""></a> </li>
-          <li> <a href="
-           #"
-               target="_blank"
-               rel="noopener noreferrer"><img src="img/simboloTwitter.png"
-                   height="30"
-                   width="30"
-                   alt=""
-                   srcset=""></a> </li>
-        </ul>
-      </div>
+      <ul class="social-network list-unstyled d-flex my-auto">
+        <li class="social-network__item pr-4">
+          <a class="social-network__link"
+             href="#"
+             target="_blank"
+             rel="noopener noreferrer"><img class="social-network__image"
+                 src="../assets/simboloFace.png"
+                 height="30"
+                 width="30"
+                 alt=""
+                 srcset=""></a>
+        </li>
+        <li class="social-network__item pr-4">
+          <a class="social-network__link"
+             href="#"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img class="social-network__image"
+                 src="../assets/instagram.png"
+                 height="30"
+                 width="30"
+                 alt=""
+                 srcset=""></a>
+        </li>
+        <li class="social-network__item">
+          <a class="social-network__image"
+             href="
+                   #"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img class="social-network__image"
+                 src="../assets/simboloTwitter.png"
+                 height="30"
+                 width="30"
+                 alt=""
+                 srcset=""></a>
+        </li>
+      </ul>
 
-      <address class="otrosDatos">
-        <ul>
-          <li> <a href="mailto:silvio.zabala@gmail.com">Email</a> </li>
-          <li> <a href="tel:3534239520">Teléfono</a> </li>
+      <address class="contact-data mt-4 mb-0 my-md-auto">
+
+        <ul class="d-flex align-items-center list-unstyled contact-data__menu my-auto">
+          <li class="contact-data__email pr-4">
+            <a class="text-reset text-decoration-none"
+               href="mailto:silvio.zabala@gmail.com">Email</a>
+          </li>
+          <li class="contact-data__telephone">
+            <a class="text-reset text-decoration-none"
+               href="tel:3534239520">Teléfono</a>
+          </li>
         </ul>
       </address>
+
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-            crossorigin="anonymous"></script>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/index.js"></script>
   </body>
 
 </html>

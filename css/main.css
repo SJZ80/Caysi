@@ -7483,9 +7483,12 @@ a.text-body:hover, a.text-body:focus {
   font-size: 1.5em;
   font-weight: 400; }
 
+.list-customer__celphone::before {
+  content: "📞 "; }
+
 .banner {
   background: radial-gradient(#7eb0cf, #f1f3f8);
-  padding: 3rem 2rem; }
+  padding: 2rem 2rem; }
   .banner__title {
     font-weight: 900;
     transform: scale(1, 1.5); }
@@ -7493,3 +7496,11 @@ a.text-body:hover, a.text-body:focus {
     font-size: 1.5em;
     font-weight: 400;
     color: #7d6608; }
+
+.form-contact {
+  font-size: 2rem; }
+  .form-contact__input {
+    font-size: 1.5rem; }
+
+.map__iframe {
+  width: 100%; }
