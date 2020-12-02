@@ -69,18 +69,29 @@
         </div>
       </nav>
     </header>
+    <!-- Banner -->
+    <div class="jumbotron jumbotron-fluid mb-0 banner">
+      <div class="container banner__container">
+        <h1 class="display-5 banner__title">Contáctanos</h1>
+        <p class="lead text-monospace mt-3 banner__description">Puedes escribirnos en el formulario que se presenta a continuación y te contactaremos a la brevedad o utilizar los diferentes canales de comunicación que se encuentra en el pie de la página</p>
+      </div>
+    </div>
+
     <main class="main container-fluid bg-body min-vh-100">
       <section>
-        <article class="row">
-          <div class="map col-12 col-md-5 order-1 mt-4">
 
-            <iframe class="map__iframe"
+        <article class="row">
+          <div class="col-12 col-md-5 order-1 mt-4">
+
+            <iframe class="w-100"
                     height="450"
                     src="https://maps.google.com/maps?q=%22Virgen%20del%20Valle%22%2C%20G%C3%BCemes%2C%20Alderetes%2C%20Provincia%20de%20Tucum%C3%A1n&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
           </div>
 
 
-          <form class="form-contact col-12 col-md-7 order-0 mt-4 ">
+          <form class="form-contact col-12 col-md-7 order-0 mt-4"
+                action="#"
+                method="GET">
             <div class="form-group">
               <label for="formGroupExampleInput">Nombre y Apellido</label>
               <input type="text"
@@ -147,9 +158,7 @@
 
           </form>
         </article>
-        <article class="datosContacto">
 
-        </article>
       </section>
 
     </main>
@@ -215,7 +224,7 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/index.js"></script>
+
   </body>
 
 </html>

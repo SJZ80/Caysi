@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"
+      class="html">
 
   <head>
     <meta charset="UTF-8">
@@ -8,47 +9,23 @@
 
     <title>Que hacemos?</title>
     <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-          crossorigin="anonymous">
-    <link rel="stylesheet"
-          href="css/styles.css">
-    <style>
-      table {
-        border-collapse: collapse;
-      }
-
-      th {
-        border: solid 1px grey;
-      }
-
-      td {
-        border: solid 1px grey;
-      }
-
-      .separator {
-
-        height: 20px;
-      }
-    </style>
+          href="../css/main.css">
   </head>
 
   <body>
 
-    <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content">
+    <!-- Header -->
+    <header class="sticky-top">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-navbar justify-content">
         <a class="navbar-brand"
            href="#">
-          <img src="img/CAYSIPNG.png"
+          <img src="../assets/CAYSIPNG.png"
                width="200"
                height="88"
                alt=""
                loading="lazy">
         </a>
-
-        <!-- <div class="marca">
-          <h2 class="headingColor"><a href="index.html">Montajes Industriales</a></h2>
-        </div> -->
 
         <button class="navbar-toggler"
                 type="button"
@@ -60,242 +37,368 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse flex-end"
+        <div class="collapse navbar-collapse"
              id="navbarSupportedContent">
-          <!-- mr-auto  -->
-          <ul class="navbar-nav ml-auto ">
-            <li class="nav-item active">
-              <a class="nav-link"
-                 href="index.html">Inicio <span class="sr-only">(current)</span></a>
+
+          <ul class="navbar-nav text-uppercase menu py-4 ml-auto">
+            <li class="menu__item active">
+              <a class="menu__link font-weight-bold text-decoration-none"
+                 href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+
             </li>
-            <li class="nav-item">
-              <a class="nav-link active"
-                 href="presentacion.html">Somos</a>
+            <li class="menu__item">
+              <a class="menu__link font-weight-bold text-decoration-none active"
+                 href="./presentacion.html">Somos</a>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link active"
-                 href="servicios.html">Hacemos</a>
+            <li class="menu__item ">
+              <a class="menu__link font-weight-bold text-decoration-none active"
+                 href="./servicios.html">Hacemos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active"
-                 href="clientes.html">Clientes</a>
+            <li class="menu__item">
+              <a class="menu__link font-weight-bold text-decoration-none active"
+                 href="./clientes.html">Clientes</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active"
-                 href="contacto.html">Contacto</a>
+            <li class="menu__item">
+              <a class="menu__link font-weight-bold text-decoration-none active"
+                 href="./contacto.html">Contacto</a>
             </li>
           </ul>
-
         </div>
       </nav>
     </header>
 
+    <!-- Banner -->
+    <div class="jumbotron jumbotron-fluid mb-0 banner">
+      <div class="container banner__container">
+        <h1 class="display-5 banner__title">Servicios de Montaje y Construcción</h1>
+        <p class="lead text-monospace mt-5 mt-md-3 banner__description">Brindamos servicios para la ejecución de proyectos integrales, el mantenimiento de instalaciones ya operativas y el desarrollo de nuevos requerimientos. </p>
+      </div>
+    </div>
 
-    <main class="main container-fluid">
+    <main class="main container-fluid bg-body">
       <section>
-        <br>
-        <h1 class="headingColor">Servicios de montajes y construcción</h1>
-        <br>
-
-        <article class="agro row">
-          <h2 class="headingColor col-lg-12 col-md-12 col-sm-12">Productos y servicios para el Agro</h2>
-          <p class="paragraphColor col-lg-12 col-md-12 col-sm-12">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quod praesentium veritatis quibusdam, voluptate ratione dolorem quas voluptatum eos repellendus.</p>
+        <!-- Servicios de Montajes Industriales -->
+        <article class="row">
+          <h2 class="col-12 article-service__title py-3">Servicios de Montajes Industriales</h2>
+          <p class="col-12 article-service__description text-monospace pb-3 ">Los servicios que brindamos son de asesoramiento, mantenimiento y puesta en marcha de proyectos de abastecimientos, almacenamientos, montajes y mantenimientos industriales.
+            Nuestra forma de trabajo consiste en realizar el relevamiento de las necesidades puntuales de nuestros clientes y desarrollar las soluciones estratégicas adecuadas a necesidades concretas.
+            Nuestra trayectoria desarrollada en los diversos campos del sector industrial, nos permite adaptarnos rápidamente a cualquier necesidad ya sea general o puntual. A continuación se muestran algunos de nuestros trabajos</p>
 
           <!-- Galeria de imagen -->
-          <ul class="col-lg-6 col-md-12 col-sm-12">
-            <li> <img src="#"
-                   alt="Describe imagen"></li>
-            <li><img src="#"
-                   alt="Describe imagen"></li>
-            <li><img src="#"
-                   alt="Describe imagen"></li>
-            <li><img src="#"
-                   alt="Describe imagen"></li>
-          </ul>
-          <table class="col-lg-6 col-md-12 col-sm-12">
-            <caption> Productos para el Agro</caption>
-            <colgroup>
-              <col span="2">
-              <col style="background-color: khaki;">
-            </colgroup>
-            <thead style="background-color: rgb(19, 16, 16);color: white">
-              <tr>
-                <th>Producto</th>
-                <th>Descripción</th>
-                <th>Medidas</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Sinfin</td>
-                <td>
-                  <dl>
-                    <dt>Rulemanes</dt>
-                    <dd>Marca1</dd>
-                    <dd>Marca2</dd>
-                    <dt>Chapa</dt>
-                    <dd>Zincada</dd>
-                    <dd>No zincada</dd>
-                  </dl>
-                </td>
-                <td>
-                  <ol>
-                    <li>1000MM</li>
-                    <li>3000MM</li>
-                    <li>5000MM</li>
-                  </ol>
-                </td>
-              </tr>
 
-              <tr>
-                <td class="separator"
-                    colspan="3"></td>
-              </tr>
-
-              <tr>
-                <td>Redler</td>
-                <td>
-                  <dl>
-                    <dt>Rulemanes</dt>
-                    <dd>Marca1</dd>
-                    <dd>Marca2</dd>
-                    <dt>Tipo</dt>
-                    <dd>A cadena</dd>
-                    <dd>A rotor</dd>
-                  </dl>
-                </td>
-                <td>
-                  <ol>
-                    <li>1000MM</li>
-                    <li>3000MM</li>
-                    <li>5000MM</li>
-                  </ol>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="separator"
-                    colspan="3"></td>
-              </tr>
-
-              <tr>
-                <td>Silo</td>
-                <td>
-                  <dl>
-                    <dt>Torre</dt>
-                    <dd>Marca1</dd>
-                    <dd>Marca2</dd>
-                    <dt>Hormigon</dt>
-                    <dd>Lorem ipsum dolor sit amet.</dd>
-                    <dd>Lorem, ipsum.</dd>
-                  </dl>
-                </td>
-                <td>
-                  <ol>
-                    <li>1000MM</li>
-                    <li>3000MM</li>
-                    <li>5000MM</li>
-                  </ol>
-                </td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <td colspan="3">
-                Estos son algunos de los productos estandarizados que fabricamos, podes realizar personalizaciones
-              </td>
-            </tfoot>
-          </table>
+          <div id="carouselExampleCaptions"
+               class="col-12 offset-md-2 col-md-8 carousel slide carousel-fade"
+               data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions"
+                  data-slide-to="0"
+                  class="active"></li>
+              <li data-target="#carouselExampleCaptions"
+                  data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions"
+                  data-slide-to="2"></li>
+              <li data-target="#carouselExampleCaptions"
+                  data-slide-to="3"></li>
+              <li data-target="#carouselExampleCaptions"
+                  data-slide-to="4"></li>
+              <li data-target="#carouselExampleCaptions"
+                  data-slide-to="5"></li>
+              <li data-target="#carouselExampleCaptions"
+                  data-slide-to="6"></li>
+              <li data-target="#carouselExampleCaptions"
+                  data-slide-to="7"></li>
+              <li data-target="#carouselExampleCaptions"
+                  data-slide-to="8"></li>
+              <li data-target="#carouselExampleCaptions"
+                  data-slide-to="9"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../assets/M&I1.jpg"
+                     class="d-block w-100 carousel-service__image"
+                     alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="font-weight-bold carousel-service__title">Agropecuaria Mistol Ancho S.A.</h3>
+                  <p class="carousel-service__description text-monospace">Construcción y Montaje de Tolvas y Norias en Planta Procesadora de semilla.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/M&I2.jpg"
+                     class="d-block w-100 carousel-service__image"
+                     alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="font-weight-bold carousel-service__title">Agropecuaria Mistol Ancho S.A.</h3>
+                  <p class="carousel-service__description text-monospace">Construcción y Montaje de Tolvas y Norias en Planta Procesadora de semilla.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/M&I5.jpg"
+                     class="d-block w-100 carousel-service__image"
+                     alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="font-weight-bold carousel-service__title">Agropecuaria Mistol Ancho S.A.</h3>
+                  <p class="carousel-service__description text-monospace">Construcción y Montaje de Tolvas y Norias en Planta Procesadora de semilla.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/M&I6.jpg"
+                     class="d-block w-100 carousel-service__image"
+                     alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="font-weight-bold carousel-service__title">Cooperativa Agropecuaria Unión y Progreso Ltda</h3>
+                  <p class="carousel-service__description text-monospace">Desmontajes de Silos.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/M&I7.jpg"
+                     class="d-block w-100 carousel-service__image"
+                     alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="font-weight-bold carousel-service__title">Cooperativa Agropecuaria Unión y Progreso Ltda</h3>
+                  <p class="carousel-service__description text-monospace">Desmontajes de Silos.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/M&I10.jpg"
+                     class="d-block w-100 carousel-service__image"
+                     alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="font-weight-bold carousel-service__title">Finca San Fernado</h3>
+                  <p class="carousel-service__description text-monospace">Construcción y Montaje de cobertor para carga y descarga de cereal.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/M&I11.jpg"
+                     class="d-block w-100 carousel-service__image"
+                     alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="font-weight-bold carousel-service__title">Finca San Fernado</h3>
+                  <p class="carousel-service__description text-monospace">Construcción y Montaje de cobertor para carga y descarga de cereal</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/M&I12.jpg"
+                     class="d-block w-100 carousel-service__image"
+                     alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="font-weight-bold carousel-service__title">Granja del Sr. Mestre Juan José</h3>
+                  <p class="carousel-service__description text-monospace">Construcción y Montaje de norias para carga de silos de alimentación de ponedoras</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/M&I13.jpg"
+                     class="d-block w-100 carousel-service__image"
+                     alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="font-weight-bold carousel-service__title">Granja del Sr. Mestre Juan José</h3>
+                  <p class="carousel-service__description text-monospace">Construcción y Montaje de norias para carga de silos de alimentación de ponedoras</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/M&I16.jpg"
+                     class="d-block w-100 carousel-service__image"
+                     alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="font-weight-bold carousel-service__title">Granja del Sr. Mestre Juan José</h3>
+                  <p class="carousel-service__description text-monospace">Construcción y Montaje de norias para carga de silos de alimentación de ponedoras</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev"
+               href="#carouselExampleCaptions"
+               role="button"
+               data-slide="prev">
+              <span class="carousel-control-prev-icon"
+                    aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next"
+               href="#carouselExampleCaptions"
+               role="button"
+               data-slide="next">
+              <span class="carousel-control-next-icon"
+                    aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </article>
-
-        <article class="montajesIndustriales row">
-          <h2 class="headingColor col-lg-12 col-md-12 col-sm-12">Montajes industriales</h2>
-          <p class="paragraphColor col-lg-12 col-md-6 col-sm-12 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quod praesentium veritatis quibusdam, voluptate ratione dolorem quas voluptatum eos repellendus.</p>
-
-          <!-- Galeria de imagen -->
-          <ul class="col-lg-12 col-md-6 col-sm-12">
-            <li> <img src="#"
-                   alt="Describe imagen"></li>
-            <li><img src="#"
-                   alt="Describe imagen"></li>
-            <li><img src="#"
-                   alt="Describe imagen"></li>
-            <li><img src="#"
-                   alt="Describe imagen"></li>
-            <li><img src="#"
-                   alt="Describe imagen"></li>
-          </ul>
-        </article>
-
-        <article class="obracivil row">
-          <h2 class="headingColor col-lg-12 col-md-12 col-sm-12">Servicios de Obra civil</h2>
-          <p class="paragraphColor col-lg-12 col-md-6 col-sm-12">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quod praesentium veritatis quibusdam, voluptate ratione dolorem quas voluptatum eos repellendus.</p>
+        <!-- Servicios de Obra Civil -->
+        <article class="row">
+          <h2 class="col-12 article-service__title py-3 py-md-5">Servicios de Obra civil</h2>
+          <p class="col-12 article-service__description text-monospace pb-3">Brindamos soluciones completas, dentro de las diferentes obras industriales se requieren actividades pertenecientes a la obra civil, contamos con personal especializado en esta tarea que nos permite abarcar la solución completa a sus necesidades.</p>
 
           <!-- Galeria de imagen -->
-          <ul class="col-lg-12 col-md-6 col-sm-12">
-            <li> <img src="#"
-                   alt="Describe imagen"></li>
-            <li><img src="#"
-                   alt="Describe imagen"></li>
-            <li><img src="#"
-                   alt="Describe imagen"></li>
-            <li><img src="#"
-                   alt="Describe imagen"></li>
-            <li><img src="#"
-                   alt="Describe imagen"></li>
-          </ul>
+
+          <div id="carouselExampleCaptions1"
+               class="col-12 offset-md-2 col-md-8 carousel slide carousel-fade"
+               data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions1"
+                  data-slide-to="0"
+                  class="active"></li>
+              <li data-target="#carouselExampleCaptions1"
+                  data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions1"
+                  data-slide-to="2"></li>
+              <li data-target="#carouselExampleCaptions1"
+                  data-slide-to="3"></li>
+              <li data-target="#carouselExampleCaptions1"
+                  data-slide-to="4"></li>
+              <li data-target="#carouselExampleCaptions1"
+                  data-slide-to="5"></li>
+              <li data-target="#carouselExampleCaptions1"
+                  data-slide-to="6"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../assets/O&C1.jpg"
+                     class="d-block w-100 carousel-service__image"
+                     alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="font-weight-bold carousel-service__title">Full Service</h3>
+                  <p class="carousel-service__description text-monospace">Construcción de galpón de 30 x 20 mt con galería comercial.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/O&C2.jpg"
+                     class="d-block w-100 carousel-service__image"
+                     alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="font-weight-bold carousel-service__title">Full Service</h3>
+                  <p class="carousel-service__description text-monospace">Construcción de galpón de 30 x 20 mt con galería comercial.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/O&C3.jpg"
+                     class="d-block w-100 carousel-service__image"
+                     alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="font-weight-bold carousel-service__title">Full Service</h3>
+                  <p class="carousel-service__description text-monospace">Construcción de galpón de 30 x 20 mt con galería comercial.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/O&C4.jpg"
+                     class="d-block w-100 carousel-service__image"
+                     alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="font-weight-bold carousel-service__title">Agropecuaria Mistol Ancho S.A.</h3>
+                  <p class="carousel-service__description text-monospace">Manga de Ingreso y Egreso feed lots.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/O&C5.jpg"
+                     class="d-block w-100 carousel-service__image"
+                     alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="font-weight-bold carousel-service__title">Agropecuaria Mistol Ancho S.A.</h3>
+                  <p class="carousel-service__description text-monospace">Manga de Ingreso y Egreso feed lots.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/O&C6.jpg"
+                     class="d-block w-100 carousel-service__image"
+                     alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="font-weight-bold carousel-service__title">Agropecuaria Mistol Ancho S.A.</h3>
+                  <p class="carousel-service__description text-monospace">Manga de Ingreso y Egreso feed lots.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/O&C7.jpg"
+                     class="d-block w-100 carousel-service__image"
+                     alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="font-weight-bold carousel-service__title">Agropecuaria Mistol Ancho S.A.</h3>
+                  <p class="carousel-service__description text-monospace">Manga de Ingreso y Egreso feed lots.</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev"
+               href="#carouselExampleCaptions1"
+               role="button"
+               data-slide="prev">
+              <span class="carousel-control-prev-icon"
+                    aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next"
+               href="#carouselExampleCaptions1"
+               role="button"
+               data-slide="next">
+              <span class="carousel-control-next-icon"
+                    aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </article>
 
       </section>
     </main>
 
-    <footer class="footer">
+    <!-- Footer -->
+    <footer class=" footer position-static sticky-bottom d-flex flex-column align-items-center flex-md-row justify-content-md-between p-4">
 
-      <div class="redesSociales">
-        <ul>
-          <li> <a href="#"
-               target="_blank"
-               rel="noopener noreferrer"><img src="img/simboloFace.png"
-                   height="30"
-                   width="30"
-                   alt=""
-                   srcset=""></a> </li>
-          <li> <a href="#"
-               target="_blank"
-               rel="noopener noreferrer"><img src="img/instagram.png"
-                   height="30"
-                   width="30"
-                   alt=""
-                   srcset=""></a> </li>
-          <li> <a href="
-               #"
-               target="_blank"
-               rel="noopener noreferrer"><img src="img/simboloTwitter.png"
-                   height="30"
-                   width="30"
-                   alt=""
-                   srcset=""></a> </li>
-        </ul>
-      </div>
+      <ul class="social-network list-unstyled d-flex my-auto">
+        <li class="social-network__item pr-4">
+          <a class="social-network__link"
+             href="#"
+             target="_blank"
+             rel="noopener noreferrer"><img class="social-network__image"
+                 src="../assets/simboloFace.png"
+                 height="30"
+                 width="30"
+                 alt=""
+                 srcset=""></a>
+        </li>
+        <li class="social-network__item pr-4">
+          <a class="social-network__link"
+             href="#"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img class="social-network__image"
+                 src="../assets/instagram.png"
+                 height="30"
+                 width="30"
+                 alt=""
+                 srcset=""></a>
+        </li>
+        <li class="social-network__item">
+          <a class="social-network__image"
+             href="
+                   #"
+             target="_blank"
+             rel="noopener noreferrer">
+            <img class="social-network__image"
+                 src="../assets/simboloTwitter.png"
+                 height="30"
+                 width="30"
+                 alt=""
+                 srcset=""></a>
+        </li>
+      </ul>
 
-      <address class="otrosDatos">
-        <ul>
-          <li> <a href="mailto:silvio.zabala@gmail.com">Email</a> </li>
-          <li> <a href="tel:3534239520">Teléfono</a> </li>
+      <address class="contact-data mt-4 mb-0 my-md-auto">
+
+        <ul class="d-flex align-items-center list-unstyled contact-data__menu my-auto">
+          <li class="contact-data__email pr-4">
+            <a class="text-reset text-decoration-none"
+               href="mailto:silvio.zabala@gmail.com">Email</a>
+          </li>
+          <li class="contact-data__telephone">
+            <a class="text-reset text-decoration-none"
+               href="tel:3534239520">Teléfono</a>
+          </li>
         </ul>
       </address>
 
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-            crossorigin="anonymous"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
   </body>
 
 </html>

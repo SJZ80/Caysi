@@ -1,0 +1,13 @@
+.article-service {
+
+    &__title {
+        font-weight: 900;
+        transform: scale(1, 1.5);
+    }
+
+    &__description {
+        font-size: 1.5rem;
+        font-weight: 400;
+
+    }
+}
