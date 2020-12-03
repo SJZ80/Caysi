@@ -7502,9 +7502,6 @@ a.text-body:hover, a.text-body:focus {
   .form-contact__input {
     font-size: 1.5rem; }
 
-.map__iframe {
-  width: 100%; }
-
 .carousel-service__image {
   height: 60vh;
   object-fit: cover; }
@@ -7521,4 +7518,16 @@ a.text-body:hover, a.text-body:focus {
 
 .article-service__description {
   font-size: 1.5rem;
+  font-weight: 400; }
+
+.history__description {
+  font-size: 1.5em;
+  font-weight: 400; }
+
+.pilares__title {
+  font-weight: 900;
+  transform: scale(1, 1.5); }
+
+.pilares__description {
+  font-size: 1.5em;
   font-weight: 400; }
